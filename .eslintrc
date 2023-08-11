@@ -1,0 +1,39 @@
+{
+  "extends": "airbnb",
+  "parser": "@babel/eslint-parser",
+  "rules": {
+    "no-use-before-define": 0,
+    "linebreak-style": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/prop-types": [0, { "ignore": ["children","position"]}],
+    // Indent with 4 spaces
+    "indent": ["error", 4],
+    // Indent JSX with 4 spaces
+    "react/jsx-indent": ["error", 4],
+    // Indent props with 4 spaces
+    "react/jsx-indent-props": ["error", 4],
+    // TODO switch that on before production
+    "no-console": "off",
+    "max-len": "off",
+    "max-classes-per-file": 1
+  },
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "generators": true,
+      "experimentalObjectRestSpread": true
+    }
+  }
+}
+
+
+
